@@ -1,0 +1,102 @@
+body {
+    font-family: 'Open Sans',sans-serif;
+    background-color: #14302e;
+
+}
+.container {
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgIm.jpg);
+    width: 67.5rem;
+    height: 37.5rem;
+    margin: 1.25rem auto;
+}
+.header {
+    text-transform: uppercase;
+    color: #fa7176;
+    text-align: center;
+    text-decoration: solid;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 1.5rem;
+    letter-spacing: .1875rem;
+}
+.calc {
+    position: relative;
+    width: 20rem;
+    height: 32.5rem;
+    background-color: #dcd9d9;
+    margin: 0 auto;
+    border-radius: .3125rem;
+    top: 2.3125rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.842);
+}
+#keyboard {
+    height: 25rem;
+    /* top: 13rem; */
+}
+.operator, .number, .empty {
+    width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+    /* margin-top: 20px; */
+    
+}
+.operator, .number {
+    cursor: pointer;
+}
+.empty {
+    background-color: #dcd9d9;
+}
+.division {
+    background-color: #20b2aa;
+    font-size: 20px;
+}
+.sum {
+    background-color: #7d93e0;
+    font-size: 20px;
+}
+.mul {
+    background-color: #ffa500;
+    font-size: 20px;
+}
+.equal {
+    background-color: #9477af;
+    font-size: 20px;
+}
+.sub {
+    background-color: #f08080;
+    font-size: 20px;
+}
+.footer {
+    color: #a7a5a5;
+    background-color: #0f0f0f;
+    text-align: center;
+    
+}
+#result {
+    height: 7.5rem;
+}
+#history {
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output {
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+.fullstop {
+    /* font-size: 1rem; */
+    font-weight: 900;
+    align-items: center;
+    background-color: #ccf381;
+}

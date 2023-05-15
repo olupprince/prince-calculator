@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">prince's calculator</div>
+    <div class="calc">
+      <div id="result">
+        <div id="history">
+          
+        </div>
+        <div id="output">
+          
+        </div>
+
+      </div>
+
+        <div id="keyboard">
+            <button onclick="
+              input = ''
+              document.getElementById('output').innerHTML = input
+            " class="operator del" >C</button>
+            <button onclick="
+              input = ''
+              document.getElementById('output').innerHTML = input
+            " class="operator restart">CE</button>
+            <button onclick="
+              input += ' % ' 
+              document.getElementById('output').innerHTML = input
+            " class="operator per">%</button>
+            <button onclick="
+              input += ' / '
+              document.getElementById('output').innerHTML = input
+            " class="operator division">÷</button>
+            <button onclick="
+              input += '7'
+              document.getElementById('output').innerHTML = input
+            " class="number">7</button>
+            <button onclick="
+              input += '8'
+              document.getElementById('output').innerHTML = input
+            " class="number">8</button>
+            <button onclick="
+              input += '9'
+              document.getElementById('output').innerHTML = input
+            " class="number">9</button>
+            <button onclick="
+              input += ' * '
+              document.getElementById('output').innerHTML = input
+            " class="operator mul">×</button>
+            <button onclick="
+              input += '4'
+              document.getElementById('output').innerHTML = input
+            " class="number">4</button>
+            <button onclick="
+              input += '5'
+              document.getElementById('output').innerHTML = input
+            " class="number">5</button>
+            <button onclick="
+              input += '6'
+              document.getElementById('output').innerHTML = input
+            " class="number">6</button>
+            <button onclick="
+              input += ' - '
+              document.getElementById('output').innerHTML = input
+            " class="operator sub">-</button>
+            <button onclick="
+              input += '1'
+              document.getElementById('output').innerHTML = input
+            " class="number">1</button>
+            <button onclick="
+              input += '2'
+              document.getElementById('output').innerHTML = input
+            " class="number">2</button>
+            <button onclick="
+              input += '3'
+              document.getElementById('output').innerHTML = input
+            " class="number">3</button>
+            <button onclick="
+              input += ' + '
+              document.getElementById('output').innerHTML = input
+            " class="operator sum">+</button>
+            <button class="empty" ></button>
+            <button onclick="
+              input += '0'
+              document.getElementById('output').innerHTML = input
+            " class="number">0</button>
+            <button onclick="
+              input += '.'
+              document.getElementById('output').innerHTML = input
+            " class="operator fullstop">.</button>
+            <button onclick="
+              eval(input)
+              input = eval(input)
+              document.getElementById('output').innerHTML = input
+            " class="operator equal">=</button>
+        </div>
+    </div>
+  </div>
+  <footer class="footer">
+    &copy Copyright 2023 | Designed & Developed by <strong> Bigg Prince </strong> | All Rights Reserved.
+  </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
